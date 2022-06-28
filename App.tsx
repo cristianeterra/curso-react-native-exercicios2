@@ -17,7 +17,7 @@ export default function App() {
     <SafeAreaProvider>
         <NavigationContainer>
           <Tab.Navigator >
-            <Tab.Screen name="Home">
+            <Tab.Screen name="Iniciar">
                 { auth ? () => ( <AppStack /> ) : () => ( <AuthStack /> ) }
             </Tab.Screen>
           </Tab.Navigator>
