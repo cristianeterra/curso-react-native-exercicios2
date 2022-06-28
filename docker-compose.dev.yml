@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  expo_seed_app:
+    container_name: reactnative-curso-exercicio2
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    image: shx-react-native-seed
+    env_file:
+      - .env.development
+    ports:
+      - 19000:19000
+      - 19002:19002
+      - 8080:8080
+      - 19006:19006
+    volumes:
+      - ./:/app/
+      - /app/node_modules/
+    command: tail -F anything

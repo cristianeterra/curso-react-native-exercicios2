@@ -1,0 +1,17 @@
+FROM node:16.15
+LABEL version=1.0.0
+
+EXPOSE 19000
+EXPOSE 19001
+EXPOSE 19002
+EXPOSE 5555
+EXPOSE 8080
+
+RUN apt-get update && \
+    apt-get install android-tools-adb -y
+WORKDIR /app
+
+COPY package.json yarn.lock app.json ./
+RUN yarn --network-timeout 100000
+RUN npm install -g expo-cli
+CMD adb connect $ADB_IP
