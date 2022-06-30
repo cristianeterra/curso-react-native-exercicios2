@@ -7,7 +7,7 @@ export const homeStyles = StyleSheet.create({
     height: 80,
     width: 200,
     textAlign: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   background: {
     backgroundColor: '#2e2e2e',
@@ -15,9 +15,9 @@ export const homeStyles = StyleSheet.create({
   },
   title: {
     fontWeight: 'bold',
-    fontSize: 25,
+    fontSize: 40,
     textAlign: 'center',
     paddingTop: 30,
-    color: '#cccccc',
+    color: '#cccccc'
   },
 });

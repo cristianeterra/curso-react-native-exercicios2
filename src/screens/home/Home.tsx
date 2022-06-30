@@ -10,11 +10,13 @@ function HomeScreen({navigation}){
     return (
         <SafeAreaView style={homeStyles.background}>
             <Text style={homeStyles.title}>Minhas Aplicacoes</Text>
-            <CardButton title="Exercicio 1" style={homeStyles.homeButton} onPress={() => navigation.navigate('HelloWorld' )} />
-            <CardButton title="App 2" style={homeStyles.homeButton} onPress={() => navigation.navigate('App2' )} />
+            <CardButton title="Hello World" style={homeStyles.homeButton} onPress={() => navigation.navigate('HelloWorld' )} />
+            {/* <CardButton title="App 2" style={homeStyles.homeButton} onPress={() => navigation.navigate('App2' )} />
             <CardButton title="Multi" style={homeStyles.homeButton} onPress={() => navigation.navigate('Comp' )} />
-            <CardButton title="Comp 2" style={homeStyles.homeButton} onPress={() => navigation.navigate('Comp1' )} />
-            <CardButton title="Comp 3" style={homeStyles.homeButton} onPress={() => navigation.navigate('Comp2' )} />
+            <CardButton title="Comp 2" style={homeStyles.homeButton} onPress={() => navigation.navigate('Comp1' )} /> */}
+            {/* <CardButton title="Comp 3" style={homeStyles.homeButton} onPress={() => navigation.navigate('Comp2' )} /> */}
+            <CardButton title="Mínimo e Máximo" style={homeStyles.homeButton} onPress={() => navigation.navigate('MinMax' )} />
+            <CardButton title="Aleatório" style={homeStyles.homeButton} onPress={() => navigation.navigate('Aleatorio' )} />
         </SafeAreaView>
     )
 }
