@@ -17,6 +17,7 @@ function HomeScreen({navigation}){
             {/* <CardButton title="Comp 3" style={homeStyles.homeButton} onPress={() => navigation.navigate('Comp2' )} /> */}
             <CardButton title="Mínimo e Máximo" style={homeStyles.homeButton} onPress={() => navigation.navigate('MinMax' )} />
             <CardButton title="Aleatório" style={homeStyles.homeButton} onPress={() => navigation.navigate('Aleatorio' )} />
+            <CardButton title="Título" style={homeStyles.homeButton} onPress={() => navigation.navigate('Titulo' )} />
         </SafeAreaView>
     )
 }
