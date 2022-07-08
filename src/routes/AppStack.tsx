@@ -14,6 +14,7 @@ import MinmaxPai from '../components/MinMax';
 import Aleatorio from '../components/Aleatorio';
 import Titulopai from '../components/Titulo';
 import Botao from '../components/Botao';
+import Contadorpai from '../components/Contador';
 
 export function AppStack(){
     return (
@@ -36,8 +37,9 @@ export function AppStack(){
             {/* <HomeStack.Screen name='Comp2' component={Comp2}/> */}
             {/* <HomeStack.Screen name='MinMax' component={MinmaxPai}/>
             <HomeStack.Screen name='Aleatorio' component={Aleatorio}/> */}
-            <HomeStack.Screen name='Titulo' component={Titulopai}/>
+            {/* <HomeStack.Screen name='Titulo' component={Titulopai}/> */}
             <HomeStack.Screen name='Botao' component={Botao}/>
+            <HomeStack.Screen name='Contador' component={Contadorpai}/>
         </HomeStack.Navigator>
     )
 }
