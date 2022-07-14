@@ -20,7 +20,7 @@ function HomeScreen({navigation}){
             <CardButton title="Título" style={homeStyles.homeButton} onPress={() => navigation.navigate('Titulo' )} /> */}
             <CardButton title="Botão" style={homeStyles.homeButton} onPress={() => navigation.navigate('Botao' )} />
             <CardButton title="Contador" style={homeStyles.homeButton} onPress={() => navigation.navigate('Contador' )} />
-
+            <CardButton title="Direta" style={homeStyles.homeButton} onPress={() => navigation.navigate('Pai' )} />
         </SafeAreaView>
     )
 }

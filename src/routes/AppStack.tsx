@@ -15,6 +15,7 @@ import Aleatorio from '../components/Aleatorio';
 import Titulopai from '../components/Titulo';
 import Botao from '../components/Botao';
 import Contadorpai from '../components/Contador';
+import Pai from '../components/direta/Pai';
 
 export function AppStack(){
     return (
@@ -40,6 +41,7 @@ export function AppStack(){
             {/* <HomeStack.Screen name='Titulo' component={Titulopai}/> */}
             <HomeStack.Screen name='Botao' component={Botao}/>
             <HomeStack.Screen name='Contador' component={Contadorpai}/>
+            <HomeStack.Screen name='Direta' component={Pai}/>
         </HomeStack.Navigator>
     )
 }
