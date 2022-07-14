@@ -1,9 +1,9 @@
 import React from 'react'
 import Filho from './Filho'
 
-export default props => {
-        let x = 13
-        let y = 100
+export function Pai(props){
+        let x = props.a
+        let y = props.b
         return (
           <>
             <Filho a={x} b={y} />
@@ -11,3 +11,7 @@ export default props => {
           </>
         )
 }
+
+export default function DiretaPai(){
+  return <Pai a='13' b='100' />
+};
