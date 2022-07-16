@@ -16,6 +16,7 @@ import Titulopai from '../components/Titulo';
 import Botao from '../components/Botao';
 import Contadorpai from '../components/Contador';
 import DiretaPai from '../components/direta/Pai';
+import PaiIndireta from '../components/indireta/PaiIndireta';
 
 export function AppStack(){
     return (
@@ -42,6 +43,7 @@ export function AppStack(){
             <HomeStack.Screen name='Botao' component={Botao}/>
             <HomeStack.Screen name='Contador' component={Contadorpai}/>
             <HomeStack.Screen name='Direta' component={DiretaPai}/>
+            <HomeStack.Screen name='Indireta' component={PaiIndireta}/>
         </HomeStack.Navigator>
     )
 }
