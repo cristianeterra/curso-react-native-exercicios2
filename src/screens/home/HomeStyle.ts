@@ -11,7 +11,8 @@ export const homeStyles = StyleSheet.create({
   },
   background: {
     backgroundColor: '#2e2e2e',
-    flex: 1
+    flex: 1,
+    
   },
   title: {
     fontWeight: 'bold',

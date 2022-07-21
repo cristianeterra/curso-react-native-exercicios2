@@ -17,6 +17,7 @@ import Botao from '../components/Botao';
 import Contadorpai from '../components/Contador';
 import DiretaPai from '../components/direta/Pai';
 import PaiIndireta from '../components/indireta/PaiIndireta';
+import ContadorV2 from '../components/contador/ContadorV2';
 
 export function AppStack(){
     return (
@@ -28,22 +29,23 @@ export function AppStack(){
                 headerTitleStyle: {
                     fontWeight: 'bold',
                 },
-            }}
-            >
+            }}>
+            
             <HomeStack.Screen name="Home Screen!"component={HomeScreen} />
             <HomeStack.Screen name="Card" component={Card} />
             <HomeStack.Screen name="HelloWorld" component={Hello} />
-            {/* <HomeStack.Screen name="App2" component={App2}/>
+            <HomeStack.Screen name="App2" component={App2}/>
             <HomeStack.Screen name='Comp' component={Comp}/>
-            <HomeStack.Screen name='Comp1' component={Comp1}/> */}
-            {/* <HomeStack.Screen name='Comp2' component={Comp2}/> */}
-            {/* <HomeStack.Screen name='MinMax' component={MinmaxPai}/>
-            <HomeStack.Screen name='Aleatorio' component={Aleatorio}/> */}
-            {/* <HomeStack.Screen name='Titulo' component={Titulopai}/> */}
+            <HomeStack.Screen name='Comp1' component={Comp1}/> 
+            <HomeStack.Screen name='Comp2' component={Comp2}/>
+            <HomeStack.Screen name='MinMax' component={MinmaxPai}/>
+            <HomeStack.Screen name='Aleatorio' component={Aleatorio}/>
+            <HomeStack.Screen name='Titulo' component={Titulopai}/>
             <HomeStack.Screen name='Botao' component={Botao}/>
             <HomeStack.Screen name='Contador' component={Contadorpai}/>
-            <HomeStack.Screen name='Direta' component={DiretaPai}/>
-            <HomeStack.Screen name='Indireta' component={PaiIndireta}/>
+            <HomeStack.Screen name='Direta' component={DiretaPai}/> 
+            <HomeStack.Screen name='Indireta' component={PaiIndireta}/> 
+            <HomeStack.Screen name='ContadorV2' component={ContadorV2}/>
         </HomeStack.Navigator>
     )
 }
